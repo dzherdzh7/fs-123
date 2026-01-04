@@ -1,3 +1,435 @@
-body {
-  font-family: "Montserrat", sans-serif;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  background-color: #fafafa;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.container {
+  width: 1166px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.accent {
+  color: #fd9222;
+}
+
+/* -------------- HEADER ------------ */
+
+.header {
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  font-weight: 700;
+  font-size: 18px;
+
+  /* line-height: 20px; */
+  line-height: 111%;
+  letter-spacing: -0.03em;
+  color: #111;
+  margin-right: 76px;
+}
+
+.header-logo-italic {
+  font-style: italic;
+}
+
+.header-menu-link {
+  font-weight: 500;
+  font-size: 14px;
+
+  /* line-height: 16px; */
+  line-height: 1.14%;
+  letter-spacing: -0.02em;
+  color: #111;
+}
+.header-menu-list {
+  display: flex;
+  gap: 24px;
+}
+
+.header-menu-link:hover,
+.header-menu-link:focus {
+  color: #fd9222;
+}
+.header-contacts {
+  margin-left: auto;
+}
+
+.header-contacts-list {
+  display: flex;
+  gap: 24px;
+}
+/* -------------- HEADER ------------ */
+
+/* -------------- HERO ------------ */
+
+.hero {
+  background-color: #1e1823;
+  border-radius: 30px;
+  margin-bottom: 72px;
+}
+
+.hero-wrapper {
+  padding: 380px 40px 40px 40px;
+}
+
+.hero-title {
+  font-weight: 500;
+  font-size: 28px;
+
+  /* line-height: 34px; */
+  line-height: 121%;
+  letter-spacing: -0.03em;
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.hero-btn {
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  padding: 14px 40px;
+  background-color: #fd9222;
+  border: none;
+  border-radius: 100px;
+  margin-right: 14px;
+}
+
+.hero-anchor-btn {
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 14px 40px;
+}
+
+.hero-scroll-btn {
+  font-weight: 500;
+  font-size: 14px;
+
+  /* line-height: 18px; */
+  line-height: 1.29%;
+  letter-spacing: -0.03em;
+  color: #fff;
+  margin-left: auto;
+}
+
+/* -------------- HERO ------------ */
+
+/* -------------- FEATURES ------------ */
+.features {
+  background-color: #1e1823;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.features-list {
+  display: flex;
+  gap: 70px;
+  padding-left: 36px;
+  padding-right: 36px;
+}
+.features-item {
+  width: calc((100% - 140px) / 3);
+}
+.features-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 18px;
+}
+.features-text {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+}
+/* -------------- FEATURES ------------ */
+
+/* -------------- TASTE ------------ */
+
+.taste {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.taste-title {
+  font-weight: 600;
+  font-size: 24px;
+  max-width: 411px;
+
+  /* line-height: 28px; */
+  line-height: 117%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+  margin: 0 auto 28px;
+  /* margin-bottom: 28px; */
+}
+.taste-text {
+  font-weight: 400;
+  font-size: 14px;
+
+  /* line-height: 18px; */
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #111;
+  max-width: 486px;
+  margin: 0 auto 0px;
+}
+
+.taste-list {
+  display: flex;
+  gap: 19px;
+}
+
+.taste-item {
+  border: 1px solid #fd9222;
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 27px 31px;
+  width: calc((100% - 57PX) / 4);
+}
+
+.taste-img {
+  margin-bottom: 36px;
+}
+
+.taste-subtitle {
+  font-weight: 600;
+  font-size: 14px;
+
+  /* line-height: 18px; */
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #111;
+}
+
+/* -------------- TASTE ------------ */
+
+/* -------------- MADE ------------ */
+
+.made {
+}
+
+.made-title {
+  font-weight: 600;
+  font-size: 24px;
+
+  /* line-height: 28px; */
+  line-height: 117%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+}
+
+.made-img {
+}
+
+.made-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+
+  /* line-height: 24px; */
+  line-height: 133%;
+  color: #111;
+}
+
+.made-list {
+}
+.made-item {
+}
+.made-item-text {
+  font-size: 14px;
+
+  /* line-height: 18px; */
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: #111;
+}
+
+/* -------------- MADE ------------ */
+
+/* -------------- REVIEW ------------ */
+
+.review {
+}
+
+.review-title {
+  font-weight: 600;
+
+  font-size: 24px;
+
+  /* line-height: 28px; */
+  line-height: 117%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+}
+
+.accent {
+}
+
+.review-list {
+}
+
+.review-item {
+}
+
+.review-img {
+}
+
+.review-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+
+  /* line-height: 24px; */
+  line-height: 133%;
+  text-align: center;
+  color: #111;
+}
+
+.review-item-text {
+  font-size: 14px;
+
+  /* line-height: 18px; */
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.review-btn {
+  font-weight: 600;
+  font-size: 18px;
+  color: #111;
+}
+
+/* -------------- REVIEW ------------ */
+
+/* -------------- FOOTER ------------ */
+
+.footer {
+  background: #1e1823;
+}
+
+.footer-title {
+  font-weight: 500;
+  font-size: 28px;
+
+  /* line-height: 34px; */
+  line-height: 121%;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.footer-subtitle {
+  font-weight: 500;
+  font-size: 14px;
+
+  /* line-height: 18px; */
+  line-height: 129%;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-contacts {
+  font-style: normal;
+}
+
+.footer-contacts-list {
+}
+
+.footer-contacts-item {
+}
+
+.footer-contacts-link {
+  font-size: 14px;
+
+  /* line-height: 18px; */
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-menu-list {
+}
+
+.footer-menu-item {
+}
+
+.footer-menu-link {
+  font-weight: 500;
+  font-size: 14px;
+
+  /* line-height: 16px; */
+  line-height: 114%;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+/* -------------- FOOTER ------------ */
